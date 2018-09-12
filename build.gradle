@@ -1,0 +1,21 @@
+plugins {
+    id 'java'
+}
+
+group 'org.spongepowered'
+version '0.1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    maven {
+        name 'velocity'
+        url 'https://repo.velocitypowered.com/snapshots/'
+    }
+    mavenCentral()
+}
+
+dependencies {
+    compile 'com.velocitypowered:velocity-api:1.0-SNAPSHOT'
+    compile 'com.whirvis:jraknet:2.10.2'
+}
